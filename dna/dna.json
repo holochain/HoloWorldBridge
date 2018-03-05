@@ -1,0 +1,43 @@
+{
+    "Version": 1,
+    "UUID": "d795e020-1c13-11e8-9df4-80e650006988",
+    "Name": "HoloWorldBridge",
+    "Properties": {
+        "description": "provides an application template",
+        "language": "en"
+    },
+    "PropertiesSchemaFile": "properties_schema.json",
+    "BasedOn": {
+        "H": null
+    },
+    "Zomes": [
+        {
+            "Name": "HoloWorldBridge",
+            "Description": "Sample bridge app bridegd to HoloWorld",
+            "CodeFile": "HoloWorldBridge.js",
+            "BridgeFuncs" :["prependPrefix"],
+            "Entries": [
+
+            ],
+            "RibosomeType": "js",
+            "Functions": [
+                {
+                    "Name": "prependPrefix",
+                    "CallingType": "string",
+                    "Exposure": "public"
+                }
+            ],
+            "BridgeTo": "",
+            "Config": null
+        }
+    ],
+    "RequiresVersion": 19,
+    "DHTConfig": {
+        "HashType": "sha2-256",
+        "NeighborhoodSize": 0
+    },
+    "Progenitor": {
+        "Identity": "",
+        "PubKey": null
+    }
+}

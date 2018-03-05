@@ -1,0 +1,16 @@
+{
+    "Tests": [
+        {
+            "Convey": "We can create a new sampleEntry",
+            "Zome": "HoloWorldBridge",
+            "FnName": "appendPrefix",
+            "Input": "test words",
+            "Output": "bridged-test words"
+        }
+    ],
+    "Identity": "",
+    "Fixtures": {
+        "Agents": null
+    },
+    "Benchmark": false
+}
